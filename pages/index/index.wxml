@@ -1,0 +1,171 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 用户 openid -->
+  <!-- <view class="userinfo" style='background-color:  rgb(35, 194, 35);'>
+
+    <view>
+      <i-icon type="like" slot="icon" />
+      <text>{{"小店"}}</text>
+    </view>
+    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar" style="background-image: url({{avatarUrl}})"></button>
+    <view> -->
+  <!-- <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button> -->
+  <!-- <view class="flex-wrp" style="flex-direction:row;">
+        <view class="titleFont icon-text">
+          <button class="titleIcon" style="background-image: url({{tipUrl}})"></button>
+          <text>{{"    提示dfdfdffdffd"}}</text>
+        </view>
+      </view>
+      <view class="flex-wrp" style="flex-direction:row;">
+
+        <view class="titleFont icon-text">
+          <button class="titleIcon" style="background-image: url({{locationUrl}})"></button>
+          <text>{{"    位置dfdfdfdfdfdf"}}</text>
+        </view>
+      </view>
+      <view class="flex-wrp" style="flex-direction:row;">
+        <view class="titleFont icon-text">
+          <button class="titleIcon" style="background-image: url({{telUrl}})"></button>
+          <text>{{"    电话111111111111"}}</text>
+        </view>
+      </view>
+    </view>
+  </view> -->
+
+  <!-- 测试 -->
+  <view class="userinfo">
+    <!-- <view class="flex-wrp" style="flex-direction:row;"> -->
+
+    <view style='width:25%;'>
+      <i-icon type="emoji" size="80" color="#ffffff" />
+    </view>
+
+    <view class="flex-wrp" style="flex-direction:column;width:55%;">
+      <view>
+        <i-icon type="remind" size="20" color="#ffffff" />
+        <text class="icon-text">{{"XX小店"}}</text>
+      </view>
+      <view>
+        <i-icon type="coordinates" size="20" color="#ffffff" />
+        <text class="icon-text">{{"XX路100号XX路100号"}}</text>
+      </view>
+      <view>
+        <i-icon type="mobilephone" size="20" color="#ffffff" />
+        <text class="icon-text">{{"13888888888"}}</text>
+      </view>
+    </view>
+
+    <view style='width:20%;display:flex;justify-content:center;'>
+      <i-icon type="share" size="30" color="#ffffff" />
+    </view>
+    <!-- </view> -->
+  </view>
+  <view class="userSearch">
+    <view class="flex-wrp" style="flex-direction:row;width:100%;">
+      <view style='width:15%;display:flex;justify-content:center;'>
+        <i-icon type="tailor" size="35" color="#ffffff" />
+      </view>
+      <view style='width:65%;display:flex;justify-content:center;'>
+        <input type="text" class="search" auto-focus placeholder="搜索货名/属性/条码"></input>
+      </view>
+      <view style="width:20%;display:flex;justify-content:center;">
+        <i-icon type="scan" size="35" color="#ffffff" />
+      </view>
+    </view>
+  </view>
+
+  <view class="flex-wrp" style="width:100%;flex-direction:row;height:66vh;overflow:hidden;">
+    <view class="things_left" style='flex-direction:row;'>
+      <view class='leftIcon'>
+        <i-icon type="createtask" size="25" color="#23c223" />
+        <text>{{"全部"}}</text>
+      </view>
+      <view class='leftIcon'>
+        <i-icon type="praise" size="25" color="#23c223" />
+        <text>{{"热点"}}</text>
+      </view>
+      <view class='leftIcon'>
+        <i-icon type="label" size="25" color="#23c223" />
+        <text>{{"分类"}}</text>
+      </view>
+    </view>
+    <view class="things_right" style='flex-direction:column;flex-grow: 1;overflow:scroll;'>
+
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+        <view slot="footer">
+          <i-panel title="基础用法">
+            
+              <i-input-number value="{{ value1 }}" min="0" max="100" bindchange="handleChange1" />
+        
+          </i-panel>
+        </view>
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+
+
+    </view>
+
+  </view>
+
+  <view class="g-footer">
+    <i-tab-bar current="{{ current }}" color="#f759ab" bindchange="handleChange">
+      <i-tab-bar-item key="shop" icon="shop_fill" current-icon="shop_fill" title="选货"></i-tab-bar-item>
+      <i-tab-bar-item key="publishgoods" icon="publishgoods_fill" current-icon="publishgoods_fill" title="购物车"></i-tab-bar-item>
+      <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+    </i-tab-bar>
+  </view>
+  <!-- </view> -->
+  <!-- 上传图片 -->
+  <!-- <view class="uploader">
+    <view class="uploader-text" bindtap="doUpload">
+      <button class="titleIcon" style="background-image: url({{avatarUrl}})"></button>
+      <text>上传图片</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>
+  </view> -->
+
+
+  <!-- 操作数据库 -->
+  <!-- <view class="uploader">
+    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
+      <text>前端操作数据库</text>
+    </navigator>
+  </view> -->
+
+  <!-- 新建云函数 -->
+  <!-- <view class="uploader">
+    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
+      <text>快速新建云函数</text>
+    </navigator>
+  </view> -->
+
+</view>
