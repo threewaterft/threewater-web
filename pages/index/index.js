@@ -11,7 +11,8 @@ Page({
     logged: false,
     takeSession: false,
     requestResult: '',
-    current: 'homepage'
+    current: 'homepage',
+    array:[{},{},{},{},{},{},{},{},{},{},{},{},{}]
   },
   handleChange({ detail }) {
    

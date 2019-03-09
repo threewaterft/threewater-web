@@ -3,6 +3,8 @@
         <label>
             <radio value="{{value}}" checked="{{checked}}" color="{{checked?color:''}}" disabled="{{disabled}}" class="i-checkbox-radio {{positionCls}}" />
             <view class="i-checkbox-title">{{value}}</view>
+        <slot name="card"></slot>
         </label>
+        
     </i-cell>
 </view>

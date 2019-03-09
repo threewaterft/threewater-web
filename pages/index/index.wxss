@@ -6,7 +6,10 @@ page {
   flex-direction: column;
   justify-content: flex-start;
 }
-
+.card-item{
+  width:"40%";
+  height:"80%";
+}
 .things_left{
   width:20%;
 }

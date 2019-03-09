@@ -44,7 +44,7 @@
     <view class="flex-wrp" style="flex-direction:column;width:55%;">
       <view>
         <i-icon type="remind" size="20" color="#ffffff" />
-        <text class="icon-text">{{"XXXX小店"}}</text>
+        <text class="icon-text">{{"XX小店"}}</text>
       </view>
       <view>
         <i-icon type="coordinates" size="20" color="#ffffff" />
@@ -93,43 +93,15 @@
       </view>
     </view>
     <view class="things_right" style='flex-direction:column;flex-grow: 1;overflow:scroll;'>
-
-      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
-        <view slot="footer">
-          <i-panel title="基础用法">
-              <i-input-number value="{{ value1 }}" min="0" max="100" bindchange="handleChange1" />
+          <view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" >
+        <view slot="calButton" class="card-item">
+          <i-panel>
+              <i-input-number value="{{ value1 }}" min="0" max="100" bindchange="handleChange1"/>
           </i-panel>
         </view>
       </i-card>
-      <i-card full title="卡标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
-
-      </i-card>
-      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
-
-      </i-card>
-      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
-
-      </i-card>
-      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
-
-      </i-card>
-      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
-
-      </i-card>
-      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
-
-      </i-card>
-      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
-
-      </i-card>
-      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
-
-      </i-card>
-      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
-
-      </i-card>
-
-
+    </view>
     </view>
 
   </view>
