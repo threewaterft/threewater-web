@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+<view class="minething">
+<i-cell title="头像" is-link>
+    <i-icon slot="icon" type="emoji" size="60" color="#23c223" />
+  </i-cell>
+<view>
+
+</view>
+<i-divider ></i-divider>
+<view class="minething">
+<i-cell-group>
+  
+    <i-cell title="单据" is-link></i-cell>
+    <i-cell title="对账1" is-link></i-cell>
+    <!-- <i-cell title="跳转到首页" is-link url="/pages/dashboard/index"></i-cell> -->
+    <!-- <i-cell title="只有 footer 点击有效" is-link url="/pages/dashboard/index" only-tap-footer></i-cell> -->
+    <!-- <i-cell title="开关">
+        <switch slot="footer" checked />
+    </i-cell> -->
+   
+</i-cell-group>
+</view>
+<i-divider ></i-divider>
+<view class="minething">
+ <i-cell title="看过的店铺" is-link></i-cell>
+</view>
+
+
+</view>
+
+  <view class="g-footer">
+    <i-tab-bar current="{{ current }}" color="#f759ab" fixed="true" bindchange="handleChange">
+      <i-tab-bar-item key="shop" icon="shop_fill" current-icon="shop_fill" title="选货"></i-tab-bar-item>
+      <i-tab-bar-item key="publishgoods" icon="publishgoods_fill" current-icon="publishgoods_fill" title="购物车"></i-tab-bar-item>
+      <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+    </i-tab-bar>
+  </view>
+</view>

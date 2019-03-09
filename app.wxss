@@ -5,6 +5,6 @@
   align-items: center;
   box-sizing: border-box;
 } 
-/* view{
-  overflow: hidden;
-} */
+.g-footer{
+  width:100%;
+}

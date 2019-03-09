@@ -14,9 +14,23 @@ Page({
     current: 'homepage'
   },
   handleChange({ detail }) {
-    this.setData({
-      current: detail.key
-    });
+   
+    if (detail.key == "publishgoods"){
+      wx.redirectTo({
+        url: '../shopCar/shopCar'
+      })
+    } else if (detail.key == "shop"){
+      wx.redirectTo({
+        url: '../index/index'
+      }) 
+    } else if (detail.key == "mine"){
+      wx.redirectTo({
+        url: '../mine/mine'
+      }) 
+    }
+    // this.setData({
+    //   current: detail.key
+    // }); 
   },
   onLoad: function() {
     if (!wx.cloud) {

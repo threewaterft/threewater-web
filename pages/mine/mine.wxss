@@ -1,0 +1,5 @@
+/* miniprogram/pages/mine/mine.wxss */
+.minething{
+  width: 100%;
+  padding-top:10rpx;
+}

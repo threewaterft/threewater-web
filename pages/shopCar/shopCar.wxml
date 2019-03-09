@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="container">
+   <view class="carthing" style='flex-direction:column;flex-grow: 1;overflow:scroll;'>
+
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+      </i-card>
+      <i-card full title="卡标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+      <i-card full title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" i-class="card-demo">
+
+      </i-card>
+    </view>
+  <view class="g-footer">
+    <i-tab-bar current="{{ current }}" color="#f759ab" fixed="true" bindchange="handleChange">
+      <i-tab-bar-item key="shop" icon="shop_fill" current-icon="shop_fill" title="选货"></i-tab-bar-item>
+      <i-tab-bar-item key="publishgoods" icon="publishgoods_fill" current-icon="publishgoods_fill" title="购物车"></i-tab-bar-item>
+      <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+    </i-tab-bar>
+  </view>
+</view>

@@ -44,7 +44,7 @@
     <view class="flex-wrp" style="flex-direction:column;width:55%;">
       <view>
         <i-icon type="remind" size="20" color="#ffffff" />
-        <text class="icon-text">{{"XX小店"}}</text>
+        <text class="icon-text">{{"XXXX小店"}}</text>
       </view>
       <view>
         <i-icon type="coordinates" size="20" color="#ffffff" />
@@ -75,7 +75,7 @@
     </view>
   </view>
 
-  <view class="flex-wrp" style="width:100%;flex-direction:row;height:66vh;overflow:hidden;">
+  <view class="flex-wrp" style="width:100%;flex-direction:row;height:80vh;overflow:hidden;">
     <view class="things_left" style='flex-direction:row;'>
       <view class='leftIcon'>
         <i-icon type="createtask" size="25" color="#23c223" />
@@ -86,8 +86,10 @@
         <text>{{"热点"}}</text>
       </view>
       <view class='leftIcon'>
-        <i-icon type="label" size="25" color="#23c223" />
-        <text>{{"分类"}}</text>
+        <text>{{"物品A"}}</text>
+      </view>
+      <view class='leftIcon'>
+        <text>{{"物品B"}}</text>
       </view>
     </view>
     <view class="things_right" style='flex-direction:column;flex-grow: 1;overflow:scroll;'>
@@ -133,7 +135,7 @@
   </view>
 
   <view class="g-footer">
-    <i-tab-bar current="{{ current }}" color="#f759ab" bindchange="handleChange">
+    <i-tab-bar current="{{ current }}" color="#f759ab" fixed="true" bindchange="handleChange">
       <i-tab-bar-item key="shop" icon="shop_fill" current-icon="shop_fill" title="选货"></i-tab-bar-item>
       <i-tab-bar-item key="publishgoods" icon="publishgoods_fill" current-icon="publishgoods_fill" title="购物车"></i-tab-bar-item>
       <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
