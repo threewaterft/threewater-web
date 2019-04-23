@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+
+<image  class="prodImage" src="{{tempFilePaths}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+<i-button bind:click="handleClick" type="ghost"><i-icon type="add" size="28" color="#80848f" /></i-button>
+
+<view class="content">
+  <i-panel title="基础用法">
+    <i-input value="{{ value1 }}" type="textarea" title="货名" autofocus placeholder="货名" />
+    <i-input value="{{ value2 }}" type="textarea" title="货号" autofocus placeholder="货号" />
+    <i-input value="{{ value3 }}" type="textarea" title="单位" autofocus placeholder="单位" />
+    <i-input value="{{ value4 }}" type="textarea" title="价格" autofocus placeholder="价格" />
+</i-panel>
+</view>
+</view>

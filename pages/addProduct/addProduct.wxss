@@ -1,0 +1,8 @@
+/* pages/addProduct/addProduct.wxss */
+.content{
+  width:100%;
+}
+.prodImage{
+  width:10rem;
+  height: 10rem;
+}

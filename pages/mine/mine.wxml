@@ -13,6 +13,7 @@
   
     <i-cell title="单据" is-link></i-cell>
     <i-cell title="对账1" is-link></i-cell>
+    <i-cell title="入库" is-link='true' url="/pages/addProduct/addProduct" only-tap-footer></i-cell>
     <!-- <i-cell title="跳转到首页" is-link url="/pages/dashboard/index"></i-cell> -->
     <!-- <i-cell title="只有 footer 点击有效" is-link url="/pages/dashboard/index" only-tap-footer></i-cell> -->
     <!-- <i-cell title="开关">
