@@ -17,5 +17,6 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "网店APP",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

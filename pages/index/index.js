@@ -45,12 +45,12 @@ Page({
       return
     }
 
-    wx.login({ 
+    wx.login({
       success:function(res){
         console.log(JSON.stringify(res, null, '\t'));
         if(res.code){
-           wx.request({
-             url:'http://localhost:8080/login',
+           wx.request({ 
+             url:'http://three-water.club:8080/login',
              method:"post",
              header:{
                'content-type':'application/x-ww-form-urlencoded'
