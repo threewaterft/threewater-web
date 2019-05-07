@@ -1,9 +1,9 @@
 //index.js
 const app = getApp()
-
+var teset;
 Page({
   data: {
-    avatarUrl: './user-unlogin.png',
+    avatarUrl: './user-unlogin.png', 
     tipUrl: './tip.png',
     telUrl:'./tel.png',
     locationUrl: './location.png',
@@ -13,6 +13,10 @@ Page({
     requestResult: '',
     current: 'homepage',
     array:[{},{},{},{},{},{},{},{},{},{},{},{},{}]
+  },
+  getUserInfo(e){
+    console.log(JSON.stringify(e,null,'\t'));
+    app.globalData.userInfo = e.detail.userInfo;
   },
   handleChange({ detail }) {
    
@@ -41,9 +45,31 @@ Page({
       return
     }
 
+    wx.login({ 
+      success:function(res){
+        console.log(JSON.stringify(res, null, '\t'));
+        if(res.code){
+           wx.request({
+             url:'http://localhost:8080/login',
+             method:"post",
+             header:{
+               'content-type':'application/x-ww-form-urlencoded'
+             },
+             data:{
+               code:res.code
+             }
+           });
+        }
+      },
+      fail:function(res){
+        console.log(JSON.stringify(res,null,'\t'));
+      }
+    });
+
     // 获取用户信息
-    wx.getSetting({
+    wx.getSetting({ 
       success: res => {
+        console.log(JSON.stringify(res,null,'\t'));
         if (res.authSetting['scope.userInfo']) {
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
