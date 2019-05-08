@@ -1,6 +1,6 @@
 //index.js
-const app = getApp()
-var teset;
+const app = getApp();
+
 Page({
   data: {
     avatarUrl: './user-unlogin.png', 
